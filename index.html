@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Takur Ram Singh - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/16.jpg" alt="Takur Ram Singh">
+                <h1>Takur Ram Singh</h1>
+            </div>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Hey, I'm Takur Ram Singh</h1>
+                <p>I'm passionate about exploring new technologies and leveraging them to solve real-world problems.</p>
+                <a href="#projects" class="cta-button">View Projects</a>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I am a passionate Computer Science Engineer with a specialization in Artificial Intelligence and Machine Learning. I've always been curious about how things work and enjoy using technology to solve problems.</p>
+                    <p>When I'm not working, I like to play cricket and watch movies. These activities help me relax and have fun. I'm excited to keep learning and exploring new opportunities.</p>
+                </div>
+                <div class="skills">
+                    <h3>My Skills</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>ReactJS</li>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>MySQL</li>
+                        <li>Bootstrap</li>
+                        <li>C</li>
+                        <li>DSA</li>
+                        <li>MongoDB</li>
+                        <li>ML Basics</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="projpg/weather.png" alt="Weather-app">
+                    <h3>Weather-app</h3>
+                    <p>Designed a weather app using HTML, CSS, and JavaScript that fetches real-time weather data from an API and displays temperature, humidity, and wind speed. </p>
+                </div>
+                <div class="project-card">
+                    <img src="projpg/dpe.png" alt="Digital Paper Evaluation">
+                    <h3>Digital Paper Evaluation</h3>
+                    <p>A digital platform to evaluate papers, decreasing time consumption and maintaining accurate evaluation for every aspect of a particular paper.</p>
+                </div>
+                <div class="project-card">
+                    <img src="projpg/ecom.png" alt="ecommerce-application">
+                    <h3>Ecommerce-application</h3>
+                    <p> Developed a fully functional e-commerce application using the MERN stack (MongoDB, Express.js, ReactJS, Node.js). The platform includes features like user authentication, product listing, shopping cart, and  payment.</p>
+                </div>
+                <div class="project-card">
+                    <img src="projpg/swms.png" alt="Smart Waste Management System">
+                    <h3>Smart Waste Management System Using IoT</h3>
+                    <p>Enhances waste collection efficiency and promotes sustainability using IoT technology. IoT sensors embedded in waste bins sort dry and wet waste, monitor fill levels, and transmit data for real-time analysis.</p>
+                </div>
+                <div class="project-card">
+                    <img src="projpg/music.png" alt="Music Player">
+                    <h3>Music Player</h3>
+                    <p>A simple music player in Python which enables you to play, next, back, pause, and resume the music.</p>
+                </div>
+                
+                
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <form class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Takur Ram Singh</h3>
+                <p>Creating solutions through technology. Let's connect and collaborate!</p>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/takurramsingh/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/ramsingh000" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://x.com/ram_singh38811" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/ramsingh_i1/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Takur Ram Singh. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script>
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('menu-toggle').checked = false;
+            });
+        });
+    </script>
+    
+</body>
+</html>
